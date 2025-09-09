@@ -1,0 +1,117 @@
+
+*{
+  box-sizing: border-box;
+}
+
+    /* Page background and layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #9face6); /* Gradient background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1{
+  color: #333;
+}
+
+    /* Form styling */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Slight shadow */
+}
+
+    /* Input fields */
+input{
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+    /* Button styles */
+button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+    /* Disabled button styling */
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+    /* Profile card container (initially hidden) */
+#profile-card {
+  display: none;
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+    /* Hover effect on profile card */
+#profile-card:hover {
+  transform: scale(1.02);
+  background-color: #f0f0f0;
+}
+
+    /* Profile image inside the card */
+.profile-pic{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes it circular */
+  border: 3px solid #4CAF50;
+  margin-bottom: 15px;
+}
+
+    /* Name styling */
+.name {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+    /* Email styling */
+.email{
+  color: gray;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+    /* Age badge styling */
+.age-badge {
+  background-color: #4CAF50;
+  color: white;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+    /* Responsive form/card for mobile screens */
+@media (max-width: 480px) {
+    form, #profile-card {
+    width: 90%;
+  }
+}
